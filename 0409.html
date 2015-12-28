@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="Keywords" content="blog"/>
+    <meta name="Description" content="blog"/>
+    <title>Simple</title>
+    <link rel="shortcut icon" href="/static/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+</head>
+<body>
+<div class="main">
+    <div class="header">
+    	<ul id="pages">
+            <li><a href="/">home</a></li>
+            <li><a href="/#/tags">tags</a></li>
+            <li><a href="/#/archive">archive</a></li>
+    	</ul>
+    </div>
+	<div class="wrap-header">
+	<h1>
+    <a href="/" id="title"></a>
+	</h1>
+	</div>
+<div id="md" style="display: none;">
+<!-- markdown -->
+<!DOCTYPE>
+<html >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>video标记</title>
+    <link charset="UTF-8" href="../css/index.css" rel="stylesheet"/>
+    <script src="../JS/index.js"></script>
+
+</head>
+
+<body>
+<div id ="whole">
+    <div id ="banner">
+        <h1 id="calssName"> 软件开发基础</h1> </div>
+    <div id ="title_message">
+        <ul>
+            <a href="#"><li>文字排版</li> </a>
+            <a href="#"><li>图片交换</li> </a>
+            <a href="#"><li>Js脚本</li> </a>
+        </ul>
+    </div>
+    <div id ="content">
+        <div id="left">
+            <div id="left_content">
+
+                <h4>专业：计算机科学与技术</h4><br>
+                <h4>班级:   本科一班</h4> <br>
+                <h4>学号：3333333333333</h4><br>
+                <h4>姓名：Mr Song</h4><br><br><br>
+                <h4>当前日期：</h4><br>
+
+
+                <marquee behavior="scorll"  scrollamount=3 drection="left"> <lable id="time" ></lable></marquee>
+                <script>
+                    var date = document.getElementById("time");
+                    var now = new Date();
+                    var year= now.getFullYear();
+                    var month = now.getMonth()+1;
+                    var date = now.getDate();
+                    document.write(year+"年"+month+"月"+date+"日");
+                </script>
+
+            </div>
+        </div>
+
+        <div id="right">
+            <div id="right_main">
+                <div id="rightP">
+
+                    <h3>HTML5客户端表单验证</h3>
+                    <form action="#" method="post">
+                        <table align="center">
+                            <tr><td>图书名称：<input type="text" id="book" placeholder="图书名称必须输入！" required/></td></tr>
+                            <tr> <td> 图书ISBN：<input type="text"  id="bookIsb" placeholder="3个数字-1个数字-3个数字-5个数字" pattern="\d{3}-\d-\d{3}-\d{5}" required/></td></tr>
+                                <tr><td>  图书价格：<input type="number"id="bookPrice" max="150" step="5" min="20"/></td></tr>
+                                <tr><td> 作者邮箱：<input type="email"id="bookEmail" placeholder="请输入作者邮箱地址！"/></td></tr>
+                                <tr><td>图书详情：<input type="url" id="bookUrl" placeholder="请输入url路径！"/></td></tr>
+                              <tr> <td><input type="submit" onclick="send()" value="提交"/></td></tr>
+                        </table>
+                    </form>
+                    <script>
+                        function send(){
+                            alert("提交成功！")
+
+                        }
+                    </script>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div id ="footer">
+        <p id="footer_Messsage">信息学院 2015-2016 1 学期</p>
+        <div id="Tohref">
+            <select onchange=window.open(value)>
+                <option value="101.html">101</option>
+                <option value="102.html">102</option>
+                <option value="103.html">103</option>
+                <option value="104.html">104</option>
+                <option value="105.html">105</option>
+                <option value="106.html">106</option>
+                <option value="107.html">107</option>
+                <option value="108.html">108</option>
+                <option value="109.html">109</option>
+            </select>
+
+            <select onchange=window.open(value)>
+                <option value="201.html">201</option>
+                <option value="202.html">202</option>
+                <option value="203.html">203</option>
+                <option value="204.html">204</option>
+                <option value="205.html">205</option>
+                <option value="206.html">206</option>
+                <option value="207.html">207</option>
+                <option value="208.html">208</option>
+                <option value="209.html">209</option>
+            </select>
+
+            <select onchange=window.open(value)>
+                <option value="301.html">301</option>
+                <option value="302.html">302</option>
+                <option value="303.html">303</option>
+                <option value="304.html">304</option>
+                <option value="305.html">305</option>
+                <option value="306.html">306</option>
+                <option value="307.html">307</option>
+                <option value="308.html">308</option>
+                <option value="309.html">309</option>
+                <option value="310.html">310</option>
+            </select>
+            <select onchange=window.open(value)>
+                <option value="401.html">401</option>
+                <option value="402.html">402</option>
+                <option value="403.html">403</option>
+                <option value="404.html">404</option>
+                <option value="405.html">405</option>
+                <option value="406.html">406</option>
+                <option value="407.html">407</option>
+                <option value="408.html">408</option>
+                <option value="409.html">409</option>
+                <option value="410.html">410</option>
+                <option value="411.html">411</option>
+                <option value="412.html">412</option>
+            </select>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<!-- markdown end -->
+</div>
+<div class="entry" id="main">
+<!-- content -->
+
+<!-- content end -->
+</div>
+<br>
+<br>
+    <div id="disqus_thread"></div>
+	<div class="footer">
+		<p>© Copyright 2014 by isnowfy, Designed by isnowfy</p>
+	</div>
+</div>
+<script src="main.js"></script>
+<script id="content" type="text/mustache">
+    <h1>{{title}}</h1>
+    <div class="tag">
+    {{date}}
+    {{#tags}}
+    <a href="/#/tag/{{name}}">#{{name}}</a>
+    {{/tags}}
+    </div>
+</script>
+<script id="pagesTemplate" type="text/mustache">
+    {{#pages}}
+    <li>
+        <a href="{{path}}">{{title}}</a>
+    </li>
+    {{/pages}}
+</script>
+<script>
+$(document).ready(function() {
+    $.ajax({
+        url: "main.json",
+        type: "GET",
+        dataType: "json",
+        success: function(data) {
+            $("#title").html(data.name);
+            var pagesTemplate = Hogan.compile($("#pagesTemplate").html());
+            var pagesHtml = pagesTemplate.render({"pages": data.pages});
+            $("#pages").append(pagesHtml);
+            //path
+            var path = "0409.html";
+            //path end
+            var now = 0;
+            for (var i = 0; i < data.posts.length; ++i)
+                if (path == data.posts[i].path)
+                    now = i;
+            var post = data.posts[now];
+            var tmp = post.tags.split(" ");
+            var tags = [];
+            for (var i = 0; i < tmp.length; ++i)
+                if (tmp[i].length > 0)
+                    tags.push({"name": tmp[i]});
+            var contentTemplate = Hogan.compile($("#content").html());
+            var contentHtml = contentTemplate.render({"title": post.title, "tags": tags, "date": post.date});
+            $("#main").prepend(contentHtml);
+            if (data.disqus_shortname.length > 0) {
+                var disqus_shortname = data.disqus_shortname;
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            }
+        }
+    });
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ["\\(", "\\)"]], processEscapes: true}});
+</script>
+</body>
+</html>
